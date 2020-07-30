@@ -1,0 +1,25 @@
+<svg width="190" height="270" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="272" width="192" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#000" id="svg_37" height="236.363621" width="172.727261" y="25.454566" x="4.545497" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="20" id="svg_38" y="19.09093" x="7.272769" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">class</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_39" y="46.363655" x="21.818222" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">x=5</text>
+  <rect stroke="#000" id="svg_40" height="59.0909" width="134.545456" y="79.090925" x="16.363678" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <rect stroke="#000" id="svg_41" height="75.454539" width="151.818165" y="180.00001" x="16.363677" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_43" y="71.818198" x="19.09095" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">func</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_44" y="169.090917" x="20.909131" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">func1</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_45" y="99.090923" x="25.454586" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">x=10</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_46" y="118.181831" x="26.363676" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">y=20</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="20" id="svg_47" y="199.090914" x="21.818222" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">print(y)</text>
+  <text stroke="#000" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_48" y="198.975505" x="88.660928" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">raises error</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_49" y="235.454547" x="26.363677" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">z=10</text>
+  <text stroke="#000" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_50" y="98.181833" x="71.582643" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">local variable</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_51" y="44.545473" x="65.454583" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">global variable</text>
+  <text stroke="#000" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_52" y="230.000003" x="86.503051" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">local variable</text>
+ </g>
+</svg>

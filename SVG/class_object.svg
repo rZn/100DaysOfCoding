@@ -1,0 +1,30 @@
+<svg width="380" height="220" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="222" width="382" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#000" id="svg_37" height="167.27272" width="153.636352" y="25.454567" x="4.545497" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="20" id="svg_38" y="19.09093" x="7.272769" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">class</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_39" y="46.363655" x="21.818222" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">x=5</text>
+  <rect stroke="#000" id="svg_40" height="32.727265" width="94.545463" y="79.090926" x="16.363678" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <rect stroke="#000" id="svg_41" height="35.454546" width="92.727264" y="151.818193" x="16.363678" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_43" y="71.818198" x="19.09095" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">func</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_44" y="145.454555" x="20.000041" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">func1</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_45" y="99.090923" x="26.363676" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+  <text stroke="#000" transform="matrix(0.9367839097976685,0,0,0.9538702119120899,1.4939291527889509,-9.561905369023698) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_49" y="194.154867" x="26.363677" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">logic</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_51" y="44.545473" x="65.454583" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">global variable</text>
+  <ellipse stroke="#000" transform="rotate(-0.5396944284439087 272.7272644042992,123.36363983154683) " ry="91.359676" rx="91.890977" id="svg_53" cy="123.363636" cx="272.727254" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_54" y="71.818158" x="234.545464" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">global variable</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_55" y="114.545427" x="207.27274" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">func</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_56" y="115.454518" x="275.45455" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">func1</text>
+  <rect stroke="#000" id="svg_57" height="36.36363" width="39.999995" y="124.090926" x="205.454555" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <rect id="svg_58" height="37.272723" width="35.454542" y="122.272744" x="275.454546" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_59" y="145.000014" x="210.909098" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+  <text stroke="#000" transform="matrix(0.9411115050315857,0,0,1,19.754329663701355,0) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_60" y="145.000014" x="277.439115" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">logic</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_61" y="55.454563" x="256.363651" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">x=5</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="20" id="svg_62" y="21.818203" x="245.454565" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">object</text>
+ </g>
+</svg>

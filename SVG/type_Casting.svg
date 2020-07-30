@@ -1,0 +1,20 @@
+<svg width="250" height="100" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="102" width="252" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#000" id="svg_1" height="60.999999" width="90" y="37.5" x="3.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_2" y="26.5" x="3.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">x(String)</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_3" y="71.03712" x="7.089371" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">"1234"</text>
+  <rect stroke="#000" id="svg_4" height="45.999999" width="72.999997" y="44.5" x="168.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_5" y="31.5" x="172.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">x(int)</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_6" y="73.5" x="175.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">1234</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_11" y2="189.5" x2="116.5" y1="189.5" x1="117.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <polyline stroke-linecap="round" id="svg_13" points="-56.5,169.5 -57.5,170.5 " fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <polyline stroke="#000" stroke-linecap="round" id="svg_14" points="-105.5,180.5 -105.5,180.5 -104.5,180.5 " fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
+  <path stroke="#000" id="svg_16" d="m128.719419,81.006198l11.415487,-7.827272l-22.071287,0l-22.071239,0l0,-4.845452l0,-4.845457l21.818037,0c11.999904,0 21.81802,-0.245591 21.81802,-0.545759c0,-0.300161 -4.777124,-3.822435 -10.615819,-7.82727l-10.615852,-7.28152l9.812292,0l9.812255,0l14.985536,10.25982l14.985529,10.259815l-15.014276,10.240184l-15.014271,10.240184l-10.329956,0l-10.32998,0l11.415519,-7.827275l0.000005,0.000002z" stroke-opacity="null" stroke-width="1.5" fill="#546433"/>
+ </g>
+</svg>
