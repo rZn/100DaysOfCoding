@@ -96,10 +96,6 @@
     - [Class Decorator](#class-decorator)
     - [First Class Functions](#first-class-functions)
     - [Nested Function](#nested-function)
-    - [magic methods](#magic-methods)
-    - [property](#property)
-  - [Input Output](#input-output)
-  - [Modules](#modules)
 
 # Introduction
 Python is an interpreted language.
@@ -2342,8 +2338,8 @@ outerfun()
 
 
 
-### magic methods
+<!-- ### magic methods
 ### property
 ## Input Output
 
-## Modules
+## Modules -->
