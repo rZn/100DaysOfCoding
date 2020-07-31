@@ -92,6 +92,8 @@
       - [Concrete method](#concrete-method)
     - [Interface](#interface)
   - [Higher Order Programming](#higher-order-programming)
+    - [closure](#closure)
+    - [Decorator](#decorator)
     - [Function Decorator](#function-decorator)
     - [Class Decorator](#class-decorator)
     - [First Class Functions](#first-class-functions)
@@ -2199,10 +2201,39 @@ class testinterface(ABC):
 
 
 ## Higher Order Programming
+Higher Order Programming is the concept of treating functions,objects as values.    
+This was implemented from mathematics lambda calculus which uses higher order functions   
+
+Using Higher order programming power tool in our skill, but this will also take time to understand the inner working of language it self.
+All the below concepts are specific to python, might not work on other languages.   
+
+"In Functions inside function we will create at least two objects, they will all be in memory and takes execution time in return to better code readability and maintainability.    
+
+"Decorators create a outer object of outer function, then inner object inside it.   we then return this inner object. a new function of decorator object is created,and wrapped inside the inner object, we then call the inner function which is wrapped around the function object,this inner function object will call the actual function object,
+
+We can edit existing functions without touching them,can be implimented with frameworks .       
 
 
 
- Decorators
+ammin
+
+* We can pass functions as arguments to other functions.
+* we can return a function from another function(nested function)
+* Can implement python [closure](#closure)
+* Can create [decorator](#decorator)
+
+### closure
+
+In python all functions are objects.        
+They are also called first-class functions.     
+A higher order function contains other functions as parameters and returns another function as output.      
+
+In python we can assign the function object reference to a variable this will not call the function.        
+
+ A closure is a way of keeping alive a variable even when the function has returned. So, in a closure, a function is defined along with the environment. In Python, this is done by nesting a function inside the encapsulating function and then returning the underlying function.
+
+
+### Decorator
 To understand Decorators we need to learn few concepts 
 1. [NameSpace](#namespace)
 2. [Scope](#scope)
@@ -2343,3 +2374,53 @@ outerfun()
 ## Input Output
 
 ## Modules -->
+
+
+
+
+
+
+20 watt/hour
+1 kilo watt = 1000watt/20 = 50 hours 
+1 kilo watt = 5 rupees
+
+50 watt /hour = 20 hours  
+
+
+177 = 719 unit = 4.06
+116 = 459 unit = 3.9
+148 = 592 unit = 4 
+
+30 days = 90 units
+day = 3 units
+
+
+Pc = 70 hours on week / 10 hours daily / one hour work = 0.64 rupees/0.14 kilo watt 
+
+| equipment           | current(mA)(instant) | Power(KiloWatt) | unit(kwh) | unit/hour (kwh) |
+| ------------------- | -------------------- | --------------- | --------- | --------------- |
+| Pc                  | 630                  | 0.14994         | 0.644742  |                 |
+| router              | 10                   | 0.00238         | 0.010234  |                 |
+| tv                  | 310                  | 0.07378         | 0.317254  |                 |
+| fan(hall)           | 340                  | 0.08092         | 0.347956  |                 |
+| fan(bedroom)        | 340                  | 0.08092         | 0.347956  |                 |
+| fan(table)          | 160                  | 0.03808         | 0.163744  |                 |
+| light(outside)      | 30                   | 0.00714         | 0.030702  |                 |
+| light(hall)         | 240                  | 0.05712         | 0.245616  |                 |
+| light(hall)(led)    | 10                   | 0.00238         | 0.010234  |                 |
+| light(kitchen)      | 10                   | 0.00238         | 0.010234  |                 |
+| light(bedroom)      | 160                  | 0.03808         | 0.163744  |                 |
+| light(bathroom)     | 10                   | 0.00238         | 0.010234  |                 |
+| A.c                 | 9000                 | 2.142           | 9.2106    |                 |
+| heater              | 4000                 | 0.952           | 4.0936    |                 |
+| fridge              | 700                  | 0.1666          | 0.71638   |                 |
+| grinder             | 1000                 | 0.238           | 1.0234    |                 |
+| mixer               | 1150                 | 0.2737          | 1.17691   |                 |
+| charger             | 100                  | 0.0238          | 0.10234   |                 |
+| sewing machine      | 1000                 | 0.238           | 1.0234    |                 |
+| sewing machine curl | 1200                 | 0.2856          | 1.22808   |                 |
+
+
+
+price = 1 kwh = 1 unit = 4 rupees
+one equipment for one hour = its kwh 
