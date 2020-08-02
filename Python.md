@@ -103,7 +103,7 @@
         - [preserving meta-data](#preserving-meta-data)
     - [Method Decorators](#method-decorators)
     - [Class as decorator](#class-as-decorator)
-    - [Magic methods](#magic-methods)
+    - [Magic/Dunder methods](#magicdunder-methods)
 
 # Introduction
 Python is an interpreted language.
@@ -199,7 +199,7 @@ There are four methods,to run multiple python interpreters with out errors.Prefe
 
       * --->activates virtual environment.               
 
-            env env/bin/activate     
+            source env/bin/activate     
 
 ### Pip
 1. Python Package Installer,is the default package management system for python,it is used to install modules,libraries from pypi.org repository.     
@@ -2619,9 +2619,65 @@ test()
 #don't have to create a object of class, the decorator creates and assigns it to test variable.
 ```
 
-### Magic methods
-test
+### Magic/Dunder methods
+In python Magic methods are the functions/methods that are called by the interpreter on a certain action.   
+We can override existing magic methods in our logic.    
 
+Syntax:     
+```python
+__magicmethodname__():
+    logic
+```
+
+* all magic methods are enclosed between \_\_ double underscores.   
+* Magic methods are commonly referred to as **dunder methods**  
+* we can access all the magic methods inherited by a class with dir() method.Ex: dir(int) will show all magic methods of int class.     
+
+Ex:     
+```python
+print(5 + 5)#this is a __add__ method
+print(5.__add__(5))#same as above 
+```
+
+* There are hundreds of magic methods in python,related to different context.   
+
+Some of the important dunder methods that can are relevant are.     
+
+1. **\_\_init__**
+    This is used to create an object with data. 
+
+2. **\_\_new__**
+    This is the first function that is called on object creation.   
+    The created object is sent to init method for data assigning.   
+
+3. **\_\_del__**
+    At the end of object lifespan del method is used delete the object in memory
+
+4.  **\_\call__**
+    This makes our object callable,when an object is created this method is also called.    
+
+5.  **\_\_str__**
+    Instead of returning the object address,we can return a string on printing the object.
+    Ex: 
+    ```python
+    class Person:
+        def __str__(self):
+            return "hello this is the Person class"
+    
+    p = Person()
+    print(p)#returns above string instead of __main__.person at 0x0123234adf
+    ```
+6.  **\_\repr__**
+    repr is same as str,but is used mostly for debugging.while str to be readable.     
+
+7. **\_\_getitem__**
+    This is used with an iterator,a list or tuple.used to return an item in a iteratable.    
+
+8. **\_\_setitem__**
+    Used to set item to an iteratable.  
+
+9. **\_\_len__**
+    used to return the size of a list or tuple.
 
 
 <!--            
