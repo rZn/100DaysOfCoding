@@ -1,0 +1,20 @@
+<svg width="390" height="170" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="392" height="172" id="canvas_background" fill="#fff"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#000" id="svg_39" height="52.000019" width="65.999999" y="43.5" x="17.500002" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text style="cursor: text;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_40" y="31.5" x="17.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">outer_fun()</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_45" y="71.5" x="28.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+  <ellipse stroke="#000" ry="36.5" rx="40.999995" id="svg_50" cy="76" cx="215.499999" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_51" y="30.5" x="159.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">outer_fun</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_52" y="78.5" x="198.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_58" y="32.5" x="246.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">=  0x1234123kjdf</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_60" y="129.5" x="20.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">x = outer_fun</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_61" y="157.5" x="22.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">x() Will also call the function</text>
+ </g>
+</svg>

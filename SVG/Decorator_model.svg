@@ -1,0 +1,33 @@
+<svg width="530" height="200" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="532" height="202" id="canvas_background" fill="#fff"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#000" id="svg_65" height="166.999998" width="149.000003" y="29.5" x="154.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <rect stroke="#000" id="svg_66" height="52.000001" width="70.999999" y="104.5" x="167.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <rect stroke="#000" id="svg_67" height="134.000004" width="149.000004" y="45.5" x="365.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <rect stroke="#000" id="svg_69" height="46.999999" width="68" y="94.5" x="7.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_70" y="78.5" x="5.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">original function</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_72" y="120.5" x="21.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_73" y="21.5" x="168.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">decorator</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_74" y="97.5" x="162.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">original function</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_75" y="135.5" x="182.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_77" y="63.5" x="168.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">new logic</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_78" y="181.5" x="173.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">new logic</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_79" y2="77.5" x2="302.5" y1="77.5" x1="151.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_80" y2="164.5" x2="301.5" y1="163.5" x1="154.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <path id="svg_82" d="m104.587756,136.25964c-1.546861,-0.616602 -1.343914,-0.989986 2.416968,-4.446432c1.899063,-1.745326 3.452828,-3.224041 3.452828,-3.28603c0,-0.061985 -5.243965,-0.112704 -11.653293,-0.112704l-11.653293,0l0,-3.26882l0,-3.26882l11.745651,0c9.056558,0 11.644543,-0.098473 11.304091,-0.430109c-0.242855,-0.236559 -1.899488,-1.806326 -3.681408,-3.488364c-3.358941,-3.170683 -3.357887,-4.020983 0.00519,-4.284546c1.673677,-0.131161 27.73084,9.946546 28.626477,11.071409c-8.679413,4.016374 -19.054253,8.220488 -28.61117,11.927322c-0.503915,0 -1.382322,-0.185807 -1.95204,-0.412905l-0.000002,0z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <path id="svg_83" d="m324.587756,118.25964c-1.546861,-0.616602 -1.343914,-0.989986 2.416968,-4.446432c1.899063,-1.745326 3.452828,-3.224041 3.452828,-3.28603c0,-0.061985 -5.243965,-0.112704 -11.653293,-0.112704l-11.653292,0l0,-3.26882l0,-3.26882l11.745651,0c9.056558,0 11.644543,-0.098473 11.304091,-0.430109c-0.242855,-0.23656 -1.899488,-1.806326 -3.681407,-3.488365c-3.358941,-3.170683 -3.357887,-4.020983 0.005189,-4.284546c1.673678,-0.131161 27.73084,9.946546 28.626477,11.071409c-8.679413,4.016375 -19.054253,8.220488 -28.61117,11.927322c-0.503915,0 -1.382322,-0.185807 -1.95204,-0.412905l-0.000002,0z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_84" y="30.5" x="366.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">decorated Function</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_87" y="171.5" x="399.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">new logic</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_88" y="66.5" x="390.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">new logic</text>
+  <rect stroke="#000" id="svg_89" height="81" width="127.999995" y="74.5" x="377.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <rect stroke="#000" id="svg_91" height="44" width="61.999998" y="105.5" x="399.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_92" y="99.5" x="378.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">original function</text>
+  <text stroke="#000" transform="matrix(0.9842357956999308,0,0,1.0352941439432257,7.038963163551188,-4.041181432674932) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_93" y="130.159093" x="413.275766" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">logic</text>
+ </g>
+</svg>

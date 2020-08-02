@@ -1,0 +1,20 @@
+<svg width="140" height="240" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="242" width="142" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#000" id="svg_17" height="198.999997" width="126.000007" y="31.5" x="4.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_18" y="24.5" x="10.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">decoratorout</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_27" y="58.5" x="14.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+  <rect stroke="#000" id="svg_28" height="113.000002" width="91" y="109.5" x="12.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_29" y="100.5" x="16.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">decoratorin</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_30" y="131.5" x="18.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+  <rect stroke="#000" id="svg_31" height="49" width="57" y="165.5" x="19.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_32" y="160.5" x="22.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">function</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_33" y="194.5" x="29.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+ </g>
+</svg>

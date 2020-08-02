@@ -1,0 +1,25 @@
+<svg width="400" height="240" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="402" height="242" id="canvas_background" fill="#fff"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#000" id="svg_15" height="55" width="58.999998" y="36.5" x="8.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text style="cursor: move;" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_16" y="26.5" x="12.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">test1()</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_17" y="65.5" x="18.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+  <rect stroke="#000" id="svg_23" height="55" width="58.999998" y="33.5" x="103.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text style="cursor: move;" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_24" y="23.5" x="107.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">test2()</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_25" y="62.5" x="113.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_26" y="25.5" x="221.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">test1</text>
+  <ellipse ry="37.5" rx="40" id="svg_27" cy="75" cx="245.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_28" y="73.5" x="223.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_29" y="135.5" x="200.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">object at 0x0013344bd2</text>
+  <rect stroke="#000" id="svg_30" height="55" width="58.999998" y="149.5" x="11.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text style="cursor: move;" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_31" y="139.5" x="15.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">param(func)</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_32" y="178.5" x="21.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_33" y="232.5" x="19.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">func = 0x0013344bd2</text>
+ </g>
+</svg>

@@ -92,12 +92,18 @@
       - [Concrete method](#concrete-method)
     - [Interface](#interface)
   - [Higher Order Programming](#higher-order-programming)
-    - [closure](#closure)
-    - [Decorator](#decorator)
-    - [Function Decorator](#function-decorator)
-    - [Class Decorator](#class-decorator)
     - [First Class Functions](#first-class-functions)
     - [Nested Function](#nested-function)
+    - [Closure](#closure)
+    - [Decorator](#decorator)
+      - [Multiple Decorators](#multiple-decorators)
+      - [Decorator with Parameterized functions](#decorator-with-parameterized-functions)
+        - [Generalized decorator](#generalized-decorator)
+      - [Decorators with parameters](#decorators-with-parameters)
+        - [preserving meta-data](#preserving-meta-data)
+    - [Method Decorators](#method-decorators)
+    - [Class as decorator](#class-as-decorator)
+    - [Magic methods](#magic-methods)
 
 # Introduction
 Python is an interpreted language.
@@ -902,7 +908,7 @@ def function():
 print(studentname)#not defined error            
 ```   
 
-3. **Enclosed Variables**   
+3. **Enclosed/non local Variables**   
     In python we can have method inside method,[nested function](#nested-function),here we have a scope called enclosed variable.           
     We can't access variables inside a nested function.             
     * The variables in outer function is called non-local variable.
@@ -2198,107 +2204,28 @@ class testinterface(ABC):
         pass
 ```
 
-
-
 ## Higher Order Programming
-Higher Order Programming is the concept of treating functions,objects as values.    
-This was implemented from mathematics lambda calculus which uses higher order functions   
+Higher Order Programming is the concept of treating functions as objects.           
+This was taken and implemented from mathematics lambda calculus which uses higher order functions.      
 
-Using Higher order programming power tool in our skill, but this will also take time to understand the inner working of language it self.
-All the below concepts are specific to python, might not work on other languages.   
+Higher order programming features are implemented by the programming language.          
+All concepts of Higher order programming may not be supported by all languages.         
 
-"In Functions inside function we will create at least two objects, they will all be in memory and takes execution time in return to better code readability and maintainability.    
-
-"Decorators create a outer object of outer function, then inner object inside it.   we then return this inner object. a new function of decorator object is created,and wrapped inside the inner object, we then call the inner function which is wrapped around the function object,this inner function object will call the actual function object,
-
-We can edit existing functions without touching them,can be implimented with frameworks .       
-
-
-
-ammin
-
-* We can pass functions as arguments to other functions.
-* we can return a function from another function(nested function)
-* Can implement python [closure](#closure)
-* Can create [decorator](#decorator)
-
-### closure
-
-In python all functions are objects.        
-They are also called first-class functions.     
-A higher order function contains other functions as parameters and returns another function as output.      
-
-In python we can assign the function object reference to a variable this will not call the function.        
-
- A closure is a way of keeping alive a variable even when the function has returned. So, in a closure, a function is defined along with the environment. In Python, this is done by nesting a function inside the encapsulating function and then returning the underlying function.
-
-
-### Decorator
-To understand Decorators we need to learn few concepts 
-1. [NameSpace](#namespace)
-2. [Scope](#scope)
-3. [Nested Function](#nested-function)
-4. [first class function](#first-class-functions)
-
-Decorator is a powerful concept specific to python. 
-We use Decorator to create better interface for our program.This is used to write simpler and cleaner code.     
-We can write code without decorator but it will make our modules tightly coupled.       
-But if we write code with decorator we can reuse those blocks code multiple times.  
-
-* A decorator is a object that takes a function parameter as input,adds somelogic to it then returns a new function.
-* Decorators are used for adding functionality to existing functions/methods.
-* defining simply and not having to repeat function name three times,which is non pythonic
-
-A decorator is used like in real life to decorate a present.    
-We take existing method/function then perform operation before and after its execution.
-Major uses:
-1. Analysis,logging
-2. Data validation and runtime checks
-3. Creating new frameworks
-4. 
-
-
-
-Ex:         
-```python
-def uper(func):
-    def inner():
-        str1 = func()#copying result to a variable
-        return str1.upper()
-    return inner#returning inner reference
-
-def printstr():
-    return "good"
-
-d = uper(printstr)#calls uper function with printstr as parameter
-print(d())
-```
-
-Instead of using a separate method to use a nested function we use a decorator
-Syntax:
-```python
-@decoratorclassname
-def methodname():
-    logic
-```
-
-* here the method is passed to the decorator method. 
-* Can reuse it where ever we need to implement this.
-
-
-### Function Decorator
-
-### Class Decorator
-
-
-
+In python Higher Order Programming is achieved with following concepts:    
+1. [First Class Functions](#first-class-functions)
+2. [Nested Functions](#nested-function)
+3. [Closure](#closure)
+4. [NameSpace](#namespace)
+5. [Scope](#scope)
+6. [Decorator](#decorator)
 
 
 ### First Class Functions
 In python functions are by default First Class Functions.       
-A first class function have these properties.      
 
-1. It is an object 
+The properties of first class function are:     
+
+1. It is an object          
     Ex:     
     ```python
     def test():
@@ -2308,73 +2235,401 @@ A first class function have these properties.
     x = test # passing test object address
     x()#calling the function at the address
 
-2. Can be passed as parameter,here the address of function object is passed.
-    Ex:            
+![First Class Function ex1](./SVG/First_Class_Function_ex1.svg)
+
+2. Functions can be passed as parameters,here the reference(address) of function object is passed.         
+    Ex:             
     ```python
-    def test():
+    def test1():
         print("hello")
-    def exam():
+    def test2():
         print("Oh no")
 
-    test()#calling function directly
-    exam()
+    test1()#calling function directly
+    test2()
 
-    def param(fun):#taking function address as a parameter
-        fun()#calling function of parameter
+    def param(func):#taking function address as a parameter
+        func()#calling function at the address
 
-    param(test)
-    #will call param function and pass the test function address as parameter,
-    #then inside the function we will call the test function
-    param(exam)
+    param(test1)
+    #this will call param function and pass the test1 function address as parameter,
+    #param function will call the test1 function
+    param(test2)
     ```
+![First_Class_Function_ex2](./SVG/First_Class_Function_ex2.svg)
 
-3. Stored as a variable             
+3. Function address can be Stored as a variable               
     Ex:     
     ```python
     def test():
         print("hello")
     
-    x = test#storing function address
-    x()#calling the function in the address
+    var = test#storing function address
+    var()#calling the function at the address
     ```
 
-* can return a function address from another function,this is also called **Closure**   
-* We use closure to take the inner function address and use it outside the outer function scope.           
-    Ex:     
-    ```python
-    def test():
-        def innertest():
-            print("hello")
-        return innertest
-    
-    x = test()#contains the address of innerfunction
-    x()#call the inner function out of its scope.
-    ```
+![First Class Function ex3](./SVG/First_Class_Function_ex3.svg)
+
+4. Can implement [Closure](#closure)
+
+Example:        
+![First Class Example](./SVG/First_Class_Function_Explanation.svg)
+
+* Consider the above example
+* Here we are creating a function with some logic
+* Python will create an object for that function
+* Stores the objects address in the function name,here function name is a variable
+* When we put paranthesis at the end of function name, i.e outer_fun() we are calling the object in that memory address.
+* Here we are copying the outer fun data to x,so address is copied to x
+* When we call x() the outer_fun object is executed.    
+* This property is used to create [Closure](#closure)
+
 
 ### Nested Function
 In python we can have a method inside a method.     
 Which is not possible in C,C++,Java.Which is confusing for these language programmers.          
-Since python functions are First Class Functions we can do this just like objects inside objects.   
+
+Since python functions are First Class Functions,we can work with them, just like objects inside objects.   
+* we can return variables or output just like normal functions.         
+
 Syntax:     
 ```python
-def outerfun():
+def outer_Fun():
     logic
-    def innerfun():
+    def inner_Fun():
         logic
-    innerfun()
-    # can only call innerfun in its scope
+    inner_Fun()
+    # can only call inner_Fun in its scope
 
-outerfun()
+outer_Fun()
+```
+![Nested_Function](./SVG/Nested_Function.svg)
+
+### Closure
+In a function we can return variables,data.     
+Since Functions are first class functions we can return the function(object) address.        
+
+Ex:     
+```python
+def test():
+    return "hello"
+print(test())#prints the returned value
+
+def test1():
+    print("inside test1")
+    return test1
+    #will return the current objects address
+
+x = test1()#will call the function
+
+del test1
+#will remove the test1 reference but object is still in memory 
+print(x)
+#x referrs to that object
+print(test1)
+```
+
+* The above program is an example of closure(simple) 
+* here we are creating a test1 function that returns the function object address.see [this](#first-class-functions)
+* This address refers to functions object. 
+* We can copy this reference to a new variable and call the same function
+* We deleted the test1(variable) from memory but object is still alive with reference to x
+
+The process of accessing the function object outside its scope is called **closure**.           
+Closure is mostly used with nested functions.        
+Closure is preferred, instead of a class with only one method.         
+
+Ex:     
+```python
+def outer():
+    def inner():
+        print("hello")
+    return inner
+
+x = outer()#here we get address of inner object
+x()#calls object in the given address
+#calls inner object out of its scope.
+
+outer()()#calls the returned object directly
+```
+
+* In the above example we use closure with Nested function  
+* Here inner function object is returned and used out of it's enclosed scope.This is Closure.
+* The returned object address is stored in another variable and called from it
+* Can also call inner function object with double call,outer()(),the first call executes outer() the second call executes returned object.  
+* Python works with objects,and all of these objects are stored in memory till program execution stops.
+* Even if we delete the function,with del functionname, we are only deleting the variable not the object.    
+
+We sacrifice memory and execution time for better development and maintainability of our project.       
+
+
+### Decorator
+Decorator is an advanced python concept,to understand this all the above concepts need to be understood correctly.     
+
+**Definition**      
+* A decorator is a function that takes another function as parameter,adds some logic to it then returns a new function object.  
+* Decorators are used for adding functionality to existing functions/methods,without changing its source code.   
+* We use Decorator to create better interface for our program,to write simpler and cleaner code.     
+* we can write code without decorator but it will make our modules tightly coupled.       
+
+![Decorator Model](./SVG/Decorator_model.svg)
+
+
+* A real world example would be wrapping a present(a watch) in a gift box(decorate) and giving it to the person.    
+* We can gift the present directly but a bit of decoration makes the presentation great.       
+
+Major uses of Using Decorators:
+1. Analysis,logging
+2. Data validation and runtime checks
+3. Creating new frameworks
+
+Ex:         
+```python
+def outer(func):
+    def inner():
+        print("x" * 20)#enclosing our function with additional code
+        func()#calling the actual function
+        print("x" * 20)
+    return inner#returning inner object
+
+def test():
+    print( "good")
+
+d = outer(test)#calls outer function with test as parameter
+d()
+```
+
+**Explanation**     
+1. Python interpreter will create an object for outer and test functions    
+    ![Decorator example 1](./SVG/Decorators_ex1.svg)
+
+2. when outer(test) is called,we go to outer object with test object as parameter
+3. in outer object, inner object is created,test object is put inside of inner object using closure
+    ![Decorator example 1](./SVG/Decorators_ex2.svg)
+
+4. inner object reference is returned and stored in d
+5. when we call d,interpreter goes to inner object directly and executes code in it 
+6. calls the func variable with test object,which it already contains.
+
+
+**Syntax**      
+The above example is valid,but it's not python way(pythonic), their is a better syntax to work with decorators
+```python
+@decoratorfunctionname
+def function()
+    pass
+
+function()#for @ decorator
+function = decorator(function)#@ and this are same functionality
+```
+
+* we use this syntax when using decorators,they can be declared in separate module and import only useful ones and use directly.    
+* Can have multiple decorators,parameterized decorators for a function
+
+#### Multiple Decorators
+We can have multiple decorators on a single function.
+
+Syntax:     
+```python   
+@decoratorout
+@decoratorin
+def function():
+    pass
+
+function()
+
+function = decoratorout(decoratorin(function))#same as above
+```
+
+* here order matters,consider this in terms of wrapping.
+* decoratorin is applied first,then decoratorout is applied next,this proceses continues.   
+
+![multiple decorator](./SVG/multiple_decorator.svg)
+
+
+
+####  Decorator with Parameterized functions
+We can create a decorator that accepts parameters,this is same as overriding function with arguments.   
+
+Syntax:     
+```python
+def outer(func):
+    def inner(x,y):
+        print("inside inner method")
+        return func(x,y)
+        #calls the addition method and returns output to print
+    return inner
+
+@outer
+def addition(a,b):
+    return a+b
+
+print(addition(2,3))
+#calls inner function directly,that is decorator is all about
+
+addition = outer(addition)#same as above decorator
+print(addition(2,3))
+```
+
+1. interpreter creates object for outer and addition functions
+2. then on addition call will create inner object inside outer object,assigns this address to addition variable
+3. on function call will call inner object directly, and the func will call the actual addition object.
+
+
+##### Generalized decorator
+We can create a decorator that accepts specific number of arguments or any number of arguments/keyword arguments, using \*args and \**kwargs.       
+This decorator can be used with any function that gives multiple number of arguments.   
+Syntax:     
+```python
+def outer(func):
+    def inner(*args,**kwargs):
+        print("inside inner method")
+        return func(*args,**kwargs)
+        #calls the addition method and returns output to print
+    return inner
+
+@outer
+def addition(*args,**kwargs):
+    total = 0
+    for i in args:
+        total = i + total
+    return total
+
+print(addition(1,2,3,4))
+#calls inner function directly,that is decorator is all about
+
+addition = outer(addition)#same as above decorator
+print(addition(1,2,3,4))
 ```
 
 
+#### Decorators with parameters
+We can also pass parameters directly to decorators,This makes our code more prone to error,so have to be careful.       
+When we want to pass arguments to decorator itself,we have to go a level deep and wrap the entire decorator function in another function.       
+And have to return the decorator object too,without it can't access the internal logic.
 
-<!-- ### magic methods
+Syntax:     
+```python
+def decor_with_args(arg):
+    def outer(func):
+        def inner():
+            print(arg)
+            func()
+            print("after argument")
+        return inner
+    return outer
+
+@decor_with_args("printing this before actual code\n")
+def test():
+    print("inside test method\n")
+
+test()
+```
+
+![parameter decorators](./SVG/Parameter_Decorator.svg)      
+* In python we can pass arguments directly to decorator,but this creates 3 levels of nested functions.  
+* So debugging will be tough
+* Used rarely but quite powerful
+* Python automatically knows we are having three levels deep
+* The first level is function with argument,this is the argument we are passing,can use in our logic
+* The second level is actual decorator block
+* This will be used to get to third level(inner block),where the parameters of decorated function and inner block match,from here it is normal decorator working.
+
+
+##### preserving meta-data
+When we are using decorators we will lose some metadata like       
+* \_\_name__ (name of the function)
+* \_\_doc__ (the docstring)
+* \_\_module__ (The module in which the function is defined)
+
+This may not be important for executing but is for debugging and logging.   
+We can have the original function meta data attach to current inner function of decorator.  
+
+This is done by built in module functools       
+
+Syntax:
+```python
+import functools
+def outer(func):
+    @functools.wraps(func)
+    #attaches the test function meta data to inner
+    def inner():
+        print("before func")
+        func()
+        print("after func")
+    return inner
+
+@outer
+def test():
+    print("inside test")
+
+test()
+print(test.__name__)
+#will print the actual function name,not the inner function
+```
+
+### Method Decorators
+Till now we have created decorator for a function.      
+We can create decorators for methods,also.  
+the only change is that we have to give an additional parameter for object reference.        
+
+Syntax:     
+```python
+def methoddecor(func):
+    def inner(refer):
+        #can be any variable name,even self,it is just an argument
+        print('before method')
+        func(refer)
+        print('after method')
+    return inner
+
+class test:
+    @methoddecor
+    def testmethod(self):
+        print("hello")
+
+t = test()
+t.testmethod()
+```
+
+### Class as decorator
+when an object is created a \_\_call__ magic method is called.  
+We can use this to make a **class as a decorator**.     
+An entire class can be a decorator for a method/function.   
+This is used when a huge change to a function has to be made and that implementation is created in a class or is already present in a class.    
+
+Syntax:
+```python
+class dec_class:
+    def __init__(self, func):
+        #needs the func variable in init
+        self.func = func
+        
+    def __call__(self):
+        print("Decorating")
+        # have to call the actual function in class
+        self.func()
+        print("Decoration Done")
+        
+@dec_class
+def test():
+    print("inside test()")
+
+test()    
+#don't have to create a object of class, the decorator creates and assigns it to test variable.
+```
+
+### Magic methods
+test
+
+
+
+<!--            
 ### property
 ## Input Output
 
 ## Modules -->
-
+<!-- 
 
 
 
@@ -2423,4 +2678,4 @@ Pc = 70 hours on week / 10 hours daily / one hour work = 0.64 rupees/0.14 kilo w
 
 
 price = 1 kwh = 1 unit = 4 rupees
-one equipment for one hour = its kwh 
+one equipment for one hour = its kwh  -->

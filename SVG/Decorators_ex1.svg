@@ -1,0 +1,17 @@
+<svg width="200" height="130" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="202" height="132" id="canvas_background" fill="#fff"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000" ry="37.5" rx="39.000001" id="svg_98" cy="85" cx="50.500001" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <ellipse transform="rotate(-0.7250543832778931 150.49999999999793,84.99999999999972) " stroke="#000" ry="40.5" rx="40.000002" id="svg_99" cy="85" cx="150.500002" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_100" y="32.5" x="18.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">outer</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_101" y="31.5" x="131.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">test</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_102" y="90.5" x="31.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_103" y="89.5" x="132.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">logic</text>
+ </g>
+</svg>
