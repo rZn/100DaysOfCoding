@@ -8,6 +8,8 @@
     - [wheel](#wheel)
     - [Dynamic Language](#dynamic-language)
     - [Linting/Formatting](#lintingformatting)
+    - [Comments](#comments)
+    - [DocString](#docstring)
   - [Variables](#variables)
     - [Data types](#data-types)
       - [Operators](#operators)
@@ -104,6 +106,16 @@
     - [Method Decorators](#method-decorators)
     - [Class as decorator](#class-as-decorator)
     - [Magic/Dunder methods](#magicdunder-methods)
+  - [Input/Output](#inputoutput)
+    - [File handling](#file-handling)
+      - [with/as](#withas)
+    - [Modules](#modules)
+      - [Import](#import)
+        - [from](#from)
+    - [Packages](#packages)
+      - [sub-packages](#sub-packages)
+      - [intra-packages](#intra-packages)
+  - [Multi Threading](#multi-threading)
 
 # Introduction
 Python is an interpreted language.
@@ -345,6 +357,35 @@ In python we can change the data type of a variable,on fly,by inserting new type
 
         pip install pylint        
         pip install yanf         
+
+### Comments
+Comments are used to give additional information for other developers(or us in future)      
+Syntax:
+>\# makes the line a comment
+
+Uses:   
+* comments should explain why we took the approach we did,what the developers needs to take in to perspective
+* We shouldn't explain entire code in comments
+* The code should be return with the most readability and understanding possible,so when other developers see this they can understand it easily.   
+
+### DocString
+In python single line comments are used with \# sign.   
+We can create multi line comments with this.    
+>""" comments       
+>comments"""         
+
+* we can use triple double quotes to write multi line comments or a formatted string.   
+* The most common use of a multi line comment is to create a DocString
+
+A Docstring explains about our module,class,method      
+* What does the code do?
+* What are its parameters?
+* What does it return?
+
+We can easily create documentation of entire project using docstrings.  
+So the more clear they are the better our final documentation will be.  
+
+
 
 ## Variables
 Python is a CASE-SENSITIVE language,so have to be careful with syntax and naming conventions.
@@ -2678,6 +2719,176 @@ Some of the important dunder methods that can are relevant are.
 
 9. **\_\_len__**
     used to return the size of a list or tuple.
+
+10. **\_\_name__**
+    returns the name of current module when called.
+    ```python
+    print(__name__)
+    ```
+
+    * this returns \_\_main__ when current module is executed
+    * returns module absolute name when imported from other modules
+
+11. **\_\_main__** 
+    main is the current modules name
+    * Main is used to define a python module as a standalone file or an imported module.
+
+
+## Input/Output
+We Use separate frameworks or libraries depending on our use of I/O.    
+The most common I/O is files.   
+
+### File handling
+Just like other programming languages python handles files too.     
+Here files are single line texts or binary.     
+
+We can open a file with following syntax        
+```python
+file = open('filename','access')
+```
+
+* here filename is the absolute/relative path of the file.      
+* access is permission with which we open a file.
+
+There are 4 types of access writes for file handling        
+1. **r**: opens file as read only(default)      
+    Read Ex:        
+    ```python
+    file = open("test.txt","r")
+    for line in file:
+        print(line)#every line is printed.  
+    print(file.read())#reads entire file
+    ```
+
+2. **w**: opens file to write       
+    Write Ex: 
+    ```python
+    file = open('test.txt','w')
+    file.write("test paragraph to insert")#writes to a file
+    file.close()#removes lock from file
+    ```
+    * in write mode if file doesn't exist,then it will be created
+    * Will overwrite the entire file in write mode.
+3. **a**: opens file with appending permission      
+    Append Ex:  
+    ```python
+    file = open('test.txt','a')
+    file.write("test paragraph")#writes to the end of file,will not overwrite
+    file.close()#releases from memory
+    ```
+
+4. **r+/w+/a+**: opens file with read and write access. 
+
+
+* When we open a file in write,append mode we have to close and free it up from the memory 
+* This makes other logics,users to use this file.
+* If we don't free the file,other programmer can't access this file.
+* In those cases the below option is preferred   
+
+Useful File Handling Methods:       
+1. **readline()** gives a single line from file.
+2. **readlines()** gives current file lines in a list
+3. **read()** returns entire file
+4. **split()** returns lists of single words,words are split from a line with given delimeter,by default it is space.   
+
+#### with/as
+We can open a file with **with** keyword and rename with **as** keyword.    
+Syntax:     
+```python
+with open('file.txt','a') as f:
+    f.read()
+```
+
+The difference between normal file **open** and **with** is     
+* We don't have to write file.close() at the end
+* Python frees up file from memory even in case of errors,really important for multi user environment where the file is needed for others after current execution
+
+
+### Modules
+Module is a single python file that contains multiple related functions,classes.    
+Modules are used to better organize our code.   
+
+* when we use multiple modules in our code,python will cache the modules in \_\_pycache__ folder
+* This results in faster execution
+* Python decides when to use cached file vs recompile original module based on time-stamp of files,newer time-stamp on original file results in recompilation of module.     
+* When ever a module is imported all the code in it is executed once,So we shouldn't keep any I/O(print,input) related code in a module,just methods and classes.    
+
+#### Import
+We can use Existing Python modules in our code using **import** keyword.    
+Syntax:     
+```python
+import modulename
+
+print(modulename.variable)
+```
+
+* we call the classes or methods in it with modulename as namespace,to avoid writing full module name every time we can import individual class or method.  
+
+##### from
+*from* can be used to import particular method(s) from a module.        
+Here we can directly access the method with its name without namespace      
+
+Syntax:         
+```python
+from modulename import methodname, methodname2
+from packagename import modulename,methodname3
+
+methodname()
+
+```
+
+* we can use methodname without any module prefix,this keeps code easy to read and won't have unnecessary methods that we don't use.     
+* we can import multiple methods using comma delimeter. 
+* an asterisk \* is used to import all the methods and classes of a module,this is not preferred as it imports all methods in our code,which can quickly become heavy to process.  
+
+### Packages
+Packages are a group of python modules(files).      
+Packages are used to better organize our Project.      
+
+* A folder/director with a \_\_init__.py file is considered a package by python.    
+* We can import entire package in to our code,or a specific module or a specific method of a specific module
+
+ex:     
+```python
+from commerce.sales import cal_tax
+
+cal_tax()
+```
+
+* here commerce is a package,sales is a module in it
+* cal_tax is a method in sales module.  
+
+#### sub-packages
+We can have sub packages in a package.  
+These subpackages can be accessed with a dot operator.    
+
+#### intra-packages
+A package with multiple sub-packages are called intra packages and are siblings to other sub-packages. 
+We can access these intra-packages with dot operator(absolute import) or relative import.
+*   **..** takes us one level up from current directory then can access other sibling(intra) packages
+
+```python
+from ecommerce.customer import shopping#prefer this
+from ..customer import shopping#both are same
+```
+
+
+## Multi Threading
+
+
+
+
+
+
+<!-- 
+
+
+
+## Xml parsing
+## network programming
+## sql database
+## Global Interpreter lock -->
+
 
 
 <!--            
