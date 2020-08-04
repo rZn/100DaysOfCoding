@@ -108,14 +108,14 @@
     - [Magic/Dunder methods](#magicdunder-methods)
   - [Input/Output](#inputoutput)
     - [File handling](#file-handling)
-      - [with/as](#withas)
+      - [Context Manager](#context-manager)
     - [Modules](#modules)
       - [Import](#import)
         - [from](#from)
     - [Packages](#packages)
       - [sub-packages](#sub-packages)
       - [intra-packages](#intra-packages)
-  - [Multi Threading](#multi-threading)
+  - [GIL](#gil)
 
 # Introduction
 Python is an interpreted language.
@@ -2791,8 +2791,15 @@ Useful File Handling Methods:
 3. **read()** returns entire file
 4. **split()** returns lists of single words,words are split from a line with given delimeter,by default it is space.   
 
-#### with/as
-We can open a file with **with** keyword and rename with **as** keyword.    
+#### Context Manager
+In other languages we write code in try,except,finally blocks to control the context of files,databases,network and release those resource after program is done.       
+* Python provides a better way to do this with context managers.      
+
+**with** is a context manager that keeps track of which file/database/resource is opened and is in use.     
+* after the code is done the resource is released.    
+* we can use this resource in our code with a local namespace,using **as** keyword.   
+
+
 Syntax:     
 ```python
 with open('file.txt','a') as f:
@@ -2873,8 +2880,42 @@ from ..customer import shopping#both are same
 ```
 
 
-## Multi Threading
 
+
+## GIL
+Global Interpreter lock:        
+Python uses reference counter to check all the references of an object,when there are no references left these objects are removed from memory.         
+
+To make sure this reference is done properly,python has to lock the data structures/code-blocks so other programs can't access these while being modified.      
+Using individual locks for different parts of logic have two problems.  
+1. Deadlock: where two programs are waiting for other program's output to release it's own contents.    
+    Ex: program A uses resource C,program B uses resource D, now A needs D,B needs C,this is only done when execution of A or B is complete and resource is released.Which results in a deadlock.      
+    ![Dead lock](./SVG/Deadlock.svg)
+2. Multiple locks and memory leak.  When multiple parts of logic is locked and unlocked it will result in memory leak,other programs can access this leaked resource with out a key.  
+
+There were multiple solutions, to address this problem.     
+Python choose GIL,which locks the entire interpreter,resulting in only single lock to handle/use.    
+Locking the interpreter results in single threaded performance improvement but throttled multi threaded performance.        
+This was python's unique feature in 90's,since most of python's backend can be written in C and C++,so GIL made creating C extensions for python easy.          
+
+This was in 90's with python2,a time when there were no multi core cpu's,so multi threaded performance didn't matter.        
+But python3 was redesigned from scratch which had the option to remove GIL,but the creators of python couldn't,because removing the GIL would result in a single thread performance hit which makes python3 slower than python2.    
+
+So in python a single program can only use single CPU core for it's execution.      
+When we use threads in python they still will be executed with a single CPU,which doesn't boost performance.    
+To gain multi threaded performance we can instead use multi processing,where there will be different interpreter for each cpu core for each process.      
+
+
+
+<!-- ### Multi Processing/Threading
+A computer with multiple cpu cores is a multi processor system.     
+With multiple processors we can execute multiple processes simultaneously.      
+Multi Processing is two types.      
+1. Symmetric processing
+2. Asymmetric processing    
+
+multi threading is when multiple threads are created for a single process to increase computing speed.  
+ -->
 
 
 
