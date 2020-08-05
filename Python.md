@@ -87,6 +87,7 @@
   - [Polymorphism](#polymorphism)
     - [Method Overloading](#method-overloading)
     - [Method Overriding](#method-overriding)
+    - [Super()](#super)
   - [Encapsulation](#encapsulation)
   - [Abstraction](#abstraction)
     - [Abstract Class](#abstract-class)
@@ -2020,10 +2021,10 @@ class Child:
     def fun(self):
         print("inside child class and no parameters")
         #This method will only execute when called with child class object.
-        #The parent method will not work,since overridden.
-        super().fun()#not possible with out, arguments that we don't know
+        #The parent fun method will not work,due to method signature difference.
+        super().fun()# illegal with out arguments for parent method
         super().fun('something',"same")
-        #this is valid but these are magic values that are hardcoded
+        #this is valid but these are magic values that are hardcoded,have to pass from object
 
 ch = Child()
 p = Parent()
@@ -2032,10 +2033,49 @@ ch.fun()#calls child method
 p.fun()#calls parent method
 ```
 
-* The above is valid and possible in pyton but it is not a good python practice as we might not know which function parameters are actually needed.
+* The above is valid and possible in python but it is not a good python practice as we might not know which function parameters are actually needed.
 * It is impossible to call the parent method inside child method using super() without arguments.
 
 
+### Super()
+We can access parent methods, from child class using the parent class name or super().  
+They both refer to same class,it is easy to write super(),instead of class name.  
+
+Ex:     
+```python
+class Rectangle:
+    def __init__(self,length,breadth):
+        self.length = length
+        self.breadth = breadth
+
+    def area(self):
+        return self.length * self.breadth
+
+class Square(Rectangle):
+    def __init__(self,side):
+        super().__init__(self,side,side)
+        Rectangle.__init__(self,side,side)
+        super(Square,self).__init__(self,side,side)#all give same output
+
+class Cube(Square):
+    def volume(self):
+        face_area = super(Square, self).area()# uses Rectangle area()
+        return face_area * self.length
+
+sq= Square(4)
+print(sq.area())#accessing rectangle classes area method using super 
+```
+
+* We can access parent classes methods in child class with three ways
+    1. Parent class name: we can access the method with direct parent class name
+    2. super(): instead of using class name we can refer to it with super(),this will return an object of parent class that we can use to access it's methods.  
+    3. super(subclassname,subclass object): 
+        * **method resolution order** is how interpreter will search for a method in inheritance.     
+        * The default **mro** is current class,first parent class,second parent class,first grand parent class,object class.
+        * Using current implementation of super we can define custom method resolution order
+        * In super(subclassname, object),we start mro from subclass using the passed object 
+        * Using this implementation we can avoid using the parent class method,instead use method from grandparent
+        * In above example cube volume uses area() but our Square class doesn't have a area(),so Rectangle's area() method is used.But if Square has area() and we still want to access Rectangle's area() we use super(Square,self).
 
 
 ## Encapsulation
