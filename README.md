@@ -4,7 +4,7 @@ Start:19-07-2020
 
 
 ## Projects to complete
-### KDE Theme Switch:
+### KDE Theme Switch:(Complete)
 A project created with Python for UI,Bash for BackEnd.
 Created using All Clean Code Practices and styles 
 
