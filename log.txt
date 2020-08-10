@@ -4,3 +4,6 @@ Worked on switching wallpaper on time
 
 Day 11:
 Not worked much , cleaned some project details about kde backup and restore.
+
+Day 12: 
+created multiple scripts for backing up files and restoring them,a one time installation script that asks user what he would like to install or not.
