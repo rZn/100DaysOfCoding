@@ -1,3 +1,6 @@
 Day 10:
 planned on writing a script for backing up my kde config and restoring to other pc's easy 
 Worked on switching wallpaper on time 
+
+Day 11:
+Not worked much , cleaned some project details about kde backup and restore.
