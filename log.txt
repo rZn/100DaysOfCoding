@@ -7,3 +7,6 @@ Not worked much , cleaned some project details about kde backup and restore.
 
 Day 12: 
 created multiple scripts for backing up files and restoring them,a one time installation script that asks user what he would like to install or not.
+
+Day 13:
+completed kde restore and backup project with files and pushed it to github.
