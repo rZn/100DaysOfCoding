@@ -10,3 +10,6 @@ created multiple scripts for backing up files and restoring them,a one time inst
 
 Day 13:
 completed kde restore and backup project with files and pushed it to github.
+
+Day 14:
+not a productive day but started with selenium and browser project,will have to create a project flow first clear cut to do then learn selenium for that task only.	
