@@ -13,3 +13,7 @@ completed kde restore and backup project with files and pushed it to github.
 
 Day 14:
 not a productive day but started with selenium and browser project,will have to create a project flow first clear cut to do then learn selenium for that task only.	
+
+Day 15:
+Learnt bit of selenium and created a script to get all the links of a page,based on yesterdays date.
+Opens all the links in present browser.
