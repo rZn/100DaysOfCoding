@@ -17,3 +17,7 @@ not a productive day but started with selenium and browser project,will have to 
 Day 15:
 Learnt bit of selenium and created a script to get all the links of a page,based on yesterdays date.
 Opens all the links in present browser.
+
+Day 16:
+Worked real hard today,learned bit selenium but completed the project with selenium.
+Got the courses enroller script working for yesterdays courses.	took 9 hr,but don't have to do it manually again
