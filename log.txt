@@ -24,3 +24,6 @@ Got the courses enroller script working for yesterdays courses.	took 9 hr,but do
 
 Day 17:
 Started learning maths for machine learning,lot of concepts in maths but only few are needed to understand Machine learning algorithms.
+
+Day 18:
+learnt about algebra,calculus definitions,gone through half of matrices concepts,matrices are calculations related to dimensionality,the number of rows equal to number of dimensions,so are basics for tabular data in machine learning
