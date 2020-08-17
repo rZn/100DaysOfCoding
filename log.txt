@@ -21,3 +21,6 @@ Opens all the links in present browser.
 Day 16:
 Worked real hard today,learned bit selenium but completed the project with selenium.
 Got the courses enroller script working for yesterdays courses.	took 9 hr,but don't have to do it manually again
+
+Day 17:
+Started learning maths for machine learning,lot of concepts in maths but only few are needed to understand Machine learning algorithms.
