@@ -27,3 +27,6 @@ Started learning maths for machine learning,lot of concepts in maths but only fe
 
 Day 18:
 learnt about algebra,calculus definitions,gone through half of matrices concepts,matrices are calculations related to dimensionality,the number of rows equal to number of dimensions,so are basics for tabular data in machine learning
+
+Day 19:
+Completed matrices and their concpets but couldn't understand their uses in machine learning,will continue to see,where they will be used.
