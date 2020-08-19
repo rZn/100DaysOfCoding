@@ -30,3 +30,6 @@ learnt about algebra,calculus definitions,gone through half of matrices concepts
 
 Day 19:
 Completed matrices and their concpets but couldn't understand their uses in machine learning,will continue to see,where they will be used.
+
+Day 20: 
+Got doubts in matrices and their transformations but didn't find any good resources to understand so learnt from beginning again,but found the concept of transformation is changing the entire dimension to a new dimension,like moving and stretching a 2d sheet to match our end transformation and take the new coordinates of the vector on this sheet.
