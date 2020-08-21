@@ -37,3 +37,6 @@ Got doubts in matrices and their transformations but didn't find any good resour
 
 Day 21:
 learning completely about matrices and their use in machine learning,started calculus basics.
+
+Day 22: 
+started coding face recognition application,don't want to learn maths for small applications,new plan learn algorithms while building an application then learn maths underneath it,this will be easy
