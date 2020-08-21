@@ -40,3 +40,6 @@ learning completely about matrices and their use in machine learning,started cal
 
 Day 22: 
 started coding face recognition application,don't want to learn maths for small applications,new plan learn algorithms while building an application then learn maths underneath it,this will be easy
+
+Day 23:
+worked on installation of packages,Done with them,got working installation and code.Have to start the face recognition project with a good process flow and design then learn the actual coding for recognition.There are so many ways to do and resources are not good to learn but research only,so have to dig deep.
